@@ -8,9 +8,13 @@
 
 body {
     font-family: 'Raleway','Open Sans',sans-serif;
-    background-color: hsl(217, 28%, 15%);
+    background-color: hsl(218, 28%, 13%);
     color: white;
     font-size: 20px !important;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -71,6 +75,7 @@ img {
 
 .banner__img {
     width: 100%;
+    margin-top: 5vh;
 }
 
 .banner__info {
@@ -89,7 +94,7 @@ img {
     margin-bottom: 5vw;
 }
 
-.button {
+.banner__button {
     text-align: center;
     border-radius: 50px;
     width: 200px;
@@ -177,6 +182,7 @@ img {
     font-size: 13px;
     padding-top: 20px;
     line-height: 20px;
+    font-family: 'Raleway';
 }
 
 .coment__card {
@@ -202,7 +208,7 @@ img {
 }
 
 .newsletter__board {
-    box-shadow: 2px 0px 8px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 30px;
 }
@@ -309,12 +315,23 @@ img {
     font-size: 13px; 
     text-align: center;
     line-height: 20px;
+    margin: 20px auto;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); }
 
 
 /*====MOBILE FIRST====*/
+/*SMALL DEVICES - SMARTPHONE */
+@media screen and (min-width: 480px){
+    .header__text {
+        font-size: 0.8em;
+    }
+
+    .newsletter {
+        width: 70%;
+    }
+}
 
 /*SMALL DEVICES - TABLETS */
 
@@ -323,6 +340,9 @@ img {
         width: 80%;
     }
 
+    .header__logo {
+        width: 20vh;
+    }
     .header__text {
         font-size: 1em;
     }
@@ -349,12 +369,12 @@ img {
 
     .description__card{
         padding: 4vh;
-        width: 50%;
+        width: 40%;
     }
 
     .description__img {
-        width: 85px;
-        height: 75px;
+        width: 80px;
+        height: 70px;
     }
 
     .content {
@@ -380,7 +400,123 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-    * {
-        font-size: 100px;
+    p {
+        font-size: 16px;
     }
+
+    .container {
+        width: 100%;
+    }
+
+    .banner {
+        width: 45%;
+    }
+
+    .banner__title{
+        margin-bottom: 30px;
+    }
+    .banner__text {
+        width: 75%;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+
+    .banner__button {
+        width: 250px;
+    }
+
+    .description {
+        width:70%;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .content__board {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 90%;
+    }
+    
+    .content__img {
+        width: 55%;
+        margin-left: 5vw;
+    }
+
+    .content__info {
+        width:35%;
+        text-align: start;
+    }
+
+    .content__title {
+        justify-content: flex-start;
+        text-align: start;
+        font-size: 1.9em;
+    }
+
+    .coment {
+        width: 80%;
+        display: flex;
+    }
+
+    .coment p {
+        font-size: 13px;
+    }
+
+    .coment__list {
+        display: flex;
+        padding: 20px;
+    }
+
+    .coment__card {
+        margin: 20px;
+    }
+   
+    .newsletter__input {
+        width: 400px;
+        margin-right: 15px;
+    }
+
+    .footer a {
+        font-size: 14px;
+    }
+    .footer__logo {
+        width: 25vh;
+    }
+
+    .footer__container {
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer__adress {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .footer__img{
+        margin-right: 15px ;
+    }
+
+    .footer__contact, .footer__company {
+        margin: 0 25px;
+    }
+
+    .footer__icon {
+        margin-top: 15px;
+    }
+
+
 }
