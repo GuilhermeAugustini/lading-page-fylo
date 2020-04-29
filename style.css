@@ -65,6 +65,13 @@ img {
     font-size: 0.6em;
 }
 
+.header__text--button{
+    color: hsl(218, 28%, 13%);
+    background-color: white;
+    padding: 0.4rem;
+    border-radius: 10px;
+}
+
 /*====BANNER====*/
 
 .banner {
@@ -517,6 +524,5 @@ img {
     .footer__icon {
         margin-top: 15px;
     }
-
 
 }
